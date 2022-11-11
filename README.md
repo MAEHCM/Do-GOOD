@@ -2,6 +2,9 @@
 
 This is the implementation for the Do-GOOD
 
+
+
+
 # Install
 
 This code is developed with
@@ -20,20 +23,23 @@ einops                    0.4.1
 To ensure that you can finetune LayoutLM series
 Then install textattach
 
+
 # RUN
+
+Finetune your own LayoutLMv3 model or download our finetuned model
+
+
 
 1. You can add a small amount/complete FUNSD-R/FUNSD-H data to the FUNSD training set to fine tune the pre trained layoutlmv3
 
 ```javascript
-// An highlighted block
-var foo = 'bar';
+python demo.py
 ```
 
-2. You can also test the layoutv3 trained on FUNSD dataset on FUNSD-R/FUNSD-H
+2. You can also test the LayoutLMv3 trained on FUNSD dataset on FUNSD-R/FUNSD-H
 
 ```javascript
-// An highlighted block
-var foo = 'bar';
+python demo.py
 ```
 
 we'll clean the code with detailed documents in the Github.
