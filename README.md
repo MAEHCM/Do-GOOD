@@ -41,14 +41,14 @@ python demo.py
 
 #### 2. Generate FUNSD-L
  
-First generate strong and weak semantic entities and get the following files
+##### 2.1 First generate strong and weak semantic entities and get the following files
 
 ```
 python map_v3_funsd_qa.py
 ```
-#1. weak_other_map 2. strong_answer_map 3. strong_question_map 4. weak_Q_map 5. weak_A_map
+/weak_other_map  /strong_answer_map  /strong_question_map  /weak_Q_map  /weak_A_map
 
-Then modify the file path to generate FUNSD-L test data, which is saved in the mix_ In test.txt
+##### 2.2 Then modify the file path to generate FUNSD-L test data, which is saved in the mix_test.txt
 
 ```
 generate_ood_data("mix_test.txt", "/strong_question_map",
@@ -62,7 +62,7 @@ python gen_ood_mix.py
 ![](https://user-images.githubusercontent.com/111342294/201651932-f0c65c1e-3fed-42a0-b916-b575f2ba8df2.png#pic_center=60x60)
 
 
-Test FUNSD-L
+##### 2.3 Test FUNSD-L
 ```
 python demo_v3_ood_ner.py
 ```
