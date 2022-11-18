@@ -4,7 +4,7 @@
 * [Overview](#overview)
 * [Requirement](#requirement)
 * [Installation](#installation)
-* [Datasets](#Datasets)
+* [Datasets](#datasets)
 * [Quick Tutorial](#Quick Tutorial)
 * [Test](#Test)
 
@@ -35,6 +35,16 @@ einops                    0.4.1
 ```
 
 # Installation
+
+Installation for Project，if you need to study the robustness of the model to text shift, you need to install [Textattack](https://github.com/QData/TextAttack) it first
+
+```
+git clone https://anonymous.4open.science/r/Do-GOOD-D88A && cd Do-GOOD
+```
+
+# Datasets
+
+We provide manually labeled FUNSD-H and FUNSD-R, which can be obtained from the links below, and methods for generating FUNSD-L datasets.
 
 # RUN
 
