@@ -132,7 +132,10 @@ python docvqa_{}_main.py
 
 #### 2 Testing OOD datasets for downstream tasks
 
-Select the model used and the task fill, the first { } select `v3`, `v2`, `v1`, `bros` or `lilt`, the second { } select`funsd` or `cdip`
+Select the model used and the task fill, the first { } select `v3`, `v2`, `v1`, `bros` or `lilt`, the second { } select`funsd` or `cdip` ， modify the following parameters to perform a shift operation on a mode.`--text_aug`,`--image_aug`,`--aut_layout`
+```
+--text_aug={'WordSwapMaskedLM','WordSwapEmbedding','WordSwapHomoglyphSwap','WordSwapChangeNumber','WordSwapRandomCharacterDeletion'} , --image_aug=True/False , --aug_layout=True/False
+```
 
 ```
 python demo_{}_ood_{}.py
