@@ -1,8 +1,21 @@
 # 📚Do-GOOD: A Fine-Grained Analysis of Distribution Shifts on Document Images
 
+# Table of contents
+- Overview
+- Installation
+- Requirements
+- Datasets
+- Quick Tutorial
+- Test
+
+
 # Overview
 
-The Do GOOD warehouse is the benchmark for document changes in the three modal distributions of image, layout and text, covering the generation of nine kinds of OOD data, the application of five shifts, and the acquisition of FUNSD-H and FUNSD-R.
+The Do GOOD warehouse is the benchmark for document changes in the three modal distributions of image, layout and text. It covers the generation of nine kinds of OOD data, the application of five shift, the acquisition of FUNSD-H and FUNSD-R datasets, the generation of FUNSD-L datasets, and the running of two kinds of OOD baseline methods Deep Core and Mixup codes under all shift.
+
+The shift type of the Do GOOD dataset is shown in the following figure.
+
+![](https://user-images.githubusercontent.com/111342294/202708365-6bf714b1-5c10-48b8-985f-c4fea55cd57c.png)
 
 
 # Install
