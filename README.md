@@ -5,7 +5,7 @@
 * [Requirement](#requirement)
 * [Installation](#installation)
 * [Datasets](#datasets)
-* [Test](#Test)
+* [Run-test](#run-test)
 
 # Overview
 
@@ -95,43 +95,48 @@ python python mixup_image.py
 
 ![](https://user-images.githubusercontent.com/111342294/202724449-f8ee8ffd-c8aa-4dd7-b665-1a6558b5e7aa.png)
 
-
-
-
-
 ### Generate distorted images
 
+Using pre-trained [DocGeoNet](https://github.com/fh2019ustc/DocGeoNet)(specific process reference), a forward propagation calculation of the normal document image is performed to get the distorted image, and then OCR again
+
+```
+python inference.py
+```
+
+![](https://user-images.githubusercontent.com/111342294/202726278-e0a89790-494e-46a6-8a2e-42009f2dfce4.png)
 
 
-# RUN
+# Run-test
 
-Finetune your own LayoutLMv3 model or download our finetuned model [link:GOOD](https://pan.baidu.com/s/1zwlTvQsJfQDVOo2UDMRgRA)
+Select the model used and the task fill, the first { } select `v3`, `v2`, `v1`, `bros` or `lilt`, the second {} select`funsd` or `cdip`
 
-
-#### 1. Add a small amount/complete FUNSD-R/FUNSD-H data to the FUNSD training set to fine tune the pre trained layoutlmv3 and test the LayoutLMv3 trained on FUNSD dataset on FUNSD-R/FUNSD-H
+Finetune your own LayoutLMv3 model or download our finetuned model [download](https://pan.baidu.com/s/1zwlTvQsJfQDVOo2UDMRgRA)，Select models and tasks to use
 
 ```javascript
-python demo.py
+python -m torch.distributed.launch --nproc_per_node --use_env finetune_{}_{}.py --config config.yaml --output_dir
 ```
 
-| FUNSD | FUNSD_R      | FUNSD_H      |
-|:--------:| :------------:| :------------:|
-| 90.29 | 90.95 | 91.21 |
+For VQA tasks, use the command line alone，fill in the selected model at { }
 
-
-
-
-
-##### 2.3 Test FUNSD-L
-```
-python demo_v3_ood_ner.py
+```javascript
+python docvqa_{}_main.py
 ```
 
-#### 3. Get more image shifts and layout shifts from the following files for documnet classification
+#### 1.Add OOD Samples Into Original Training Set and Test
+
+| Sample Num | 0      | 10      | 20      |
+|:--------:| :------------:| :------------:| :------------:|
+| +FUNSD_R | 56.56 | 61.53 | 65.10 |
+| +FUNSD_H | 68.32 | 70.78 | 70.65 |
+
+
+#### 2 Testing OOD datasets for downstream tasks
+
+Select the model used and the task fill, the first { } select `v3`, `v2`, `v1`, `bros` or `lilt`, the second { } select`funsd` or `cdip`
 
 ```
-python mixup_image.py
-python merge_layout.py
+python demo_{}_ood_{}.py
 ```
+
 
 we'll clean the code with detailed documents in the Github.
