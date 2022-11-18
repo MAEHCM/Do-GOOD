@@ -1,8 +1,8 @@
-# Do-GOOD
+# 📚Do-GOOD: A Fine-Grained Analysis of Distribution Shifts on Document Images
 
-This is the implementation for the Do-GOOD
+# Overview
 
-
+The Do GOOD warehouse is the benchmark for document changes in the three modal distributions of image, layout and text, covering the generation of nine kinds of OOD data, the application of five shifts, and the acquisition of FUNSD-H and FUNSD-R.
 
 
 # Install
@@ -59,7 +59,6 @@ generate_ood_data("mix_test.txt", "/strong_question_map",
 ```
 python gen_ood_mix.py
 ```
-![](https://user-images.githubusercontent.com/111342294/201651932-f0c65c1e-3fed-42a0-b916-b575f2ba8df2.png#pic_center=60x60)
 
 
 ##### 2.3 Test FUNSD-L
