@@ -46,6 +46,16 @@ git clone https://anonymous.4open.science/r/Do-GOOD-D88A && cd Do-GOOD
 
 We provide manually labeled FUNSD-H and FUNSD-R, which can be obtained from the links below, and methods for generating FUNSD-L datasets.
 
+| Dataset | Header      | Question      | Answer      | Other      | Total      | Link      |
+|:--------:| :------------:| :------------:| :------------:| :------------:|:------------:|:------------:|
+| FUNSD | 122 | 1077 | 821 | 312 | 2332 |[download](https://pan.baidu.com/s/18OHBdaJCtFWTovHulJGAiQ)|
+| FUNSD-H | 126 | 981 | 755 | 380 | 2304 |[download](https://pan.baidu.com/s/15L3Kyc2-NcpXqb6o7cd-HQ)|
+| FUNSD-R | 90 | 475 | 445 | 471 | 1487 |[download](https://pan.baidu.com/s/1yrm0YANgX290ZMhpTBi8Cg)|
+
+
+####
+
+
 # RUN
 
 Finetune your own LayoutLMv3 model or download our finetuned model [link:GOOD](https://pan.baidu.com/s/1zwlTvQsJfQDVOo2UDMRgRA)
