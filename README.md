@@ -43,7 +43,7 @@ git clone https://anonymous.4open.science/r/Do-GOOD-D88A && cd Do-GOOD
 
 # Datasets
 
-We provide manually labeled FUNSD-H and FUNSD-R, which can be obtained from the links below, and methods for generating FUNSD-L datasets.
+We provide manually labeled FUNSD-H and FUNSD-R, which can be obtained from the links below, and methods for generating FUNSD-L, CDIP-L, CDIP-I<sub>1</sub> and CDIP-I<sub>2</sub> datasets.
 
 | Dataset | Header      | Question      | Answer      | Other      | Total      | Link      |
 |:--------:| :------------:| :------------:| :------------:| :------------:|:------------:|:------------:|
@@ -122,7 +122,7 @@ For VQA tasks, use the command line alone，fill in the selected model at { }
 python docvqa_{}_main.py
 ```
 
-#### 1.Add OOD Samples Into Original Training Set and Test
+* Add OOD Samples Into Original Training Set and Test
 
 | Sample Num | 0      | 10      | 20      |
 |:--------:| :------------:| :------------:| :------------:|
@@ -130,7 +130,7 @@ python docvqa_{}_main.py
 | +FUNSD_H | 68.32 | 70.78 | 70.65 |
 
 
-#### 2 Testing OOD datasets for downstream tasks
+* Testing OOD datasets for downstream tasks
 
 Select the model used and the task fill, the first { } select `v3`, `v2`, `v1`, `bros` or `lilt`, the second { } select`funsd` or `cdip` ， modify the following parameters to perform a shift operation on a mode.`--text_aug`,`--image_aug`,`--aut_layout`
 ```
