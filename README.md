@@ -140,6 +140,3 @@ Select the model used and the task fill, the first { } select `v3`, `v2`, `v1`, 
 ```
 python demo_{ }_ood_{ }.py
 ```
-
-
-we'll clean the code with detailed documents in the Github.
