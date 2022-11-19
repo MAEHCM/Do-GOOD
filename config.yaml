@@ -1,0 +1,19 @@
+image_res: 224
+vision_width: 768
+embed_dim: 256
+batch_size: 4
+temp: 0.07
+
+optimizer: {opt: adamw,lr: 3e-5,weight_decay: 0.02}
+schedular: {sched: cosine,lr: 3e-5,epochs: 60,min_lr: 1e-5,decay_rate: 1,warmup_lr: 1e-5,warmup_epochs: 20,cooldown_epochs: 0}
+
+
+
+
+
+
+
+
+
+
+
