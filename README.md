@@ -52,7 +52,7 @@ We provide manually labeled FUNSD-H and FUNSD-R, which can be obtained from the 
 | FUNSD-R | 90 | 475 | 445 | 471 | 1487 |[download](https://pan.baidu.com/s/1yrm0YANgX290ZMhpTBi8Cg)|
 
 
-### How to generate FUNSD-L
+### Generate FUNSD-L
 
 First generate strong and weak semantic entities and get the following files , `/weak_other_map` , `/strong_answer_map` , `/strong_question_map` , `/weak_Q_map`   , `/weak_A_map`,We provide five strong and weak semantic entity libraries extracted from our shuffle layout method on the FUNSD test set for five different pre-training models ,You can choose to fill in `v3`, `v2`, `v1`, `bros` or `lilt` in { } and execute the following code
 ```
@@ -74,7 +74,7 @@ python gen_ood_mix.py
 ![](https://user-images.githubusercontent.com/111342294/202719602-47a09c21-0226-4221-9652-6d714b4a4a46.png)
 
 
-### Nearest neighbor box merge
+### Generate CDIP-L
 
 To facilitate use, we separately place it in the main directory, and adjust two parameters: lamda1 controls the horizontal distance, and lamda2 controls the vertical distance. We use the priority order of consolidation: horizontal first and then vertical
 
@@ -85,7 +85,7 @@ python merge_layout.py
 ![](https://user-images.githubusercontent.com/111342294/202724209-b915d944-dd62-4e77-a66e-781bc4b4a707.png)
 
 
-### Replace document background with natural scene image
+### Generate CDIP-I_{1}
 
 Separate text pixels and non text pixels in the document, and then overlay them into the natural scene [MSCOCO](https://cocodataset.org/#home)
 
@@ -95,7 +95,7 @@ python python mixup_image.py
 
 ![](https://user-images.githubusercontent.com/111342294/202724449-f8ee8ffd-c8aa-4dd7-b665-1a6558b5e7aa.png)
 
-### Generate distorted images
+### Generate CDIP-I_{2}
 
 Using pre-trained [DocGeoNet](https://github.com/fh2019ustc/DocGeoNet)(specific process reference), a forward propagation calculation of the normal document image is performed to get the distorted image, and then OCR again
 
