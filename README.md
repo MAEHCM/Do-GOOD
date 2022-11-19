@@ -9,7 +9,7 @@
 
 # Overview
 
-The Do-GOOD warehouse is the analysis for document changes in the three modal distributions of image, layout and text. It covers the generation of nine kinds of OOD data, the application of five shift, the acquisition of FUNSD-H and FUNSD-R datasets, the generation of FUNSD-L datasets, and the running of two kinds of OOD baseline methods Deep Core and Mixup codes under all shift.
+The Do-GOOD warehouse is the analysis for document changes in the three modal distributions of image, layout and text. It covers the generation of nine kinds of OOD data, the application of five shifts, the acquisition of FUNSD-H and FUNSD-R datasets, the generation of FUNSD-L datasets, and the running of two kinds of OOD baseline methods Deep Core and Mixup codes under all shift.
 
 The shift type of the Do GOOD dataset is shown in the following figure.
 
@@ -35,7 +35,7 @@ einops                    0.4.1
 
 # Installation
 
-Installation for Project，if you need to study the robustness of the model to text shift, you need to install [Textattack](https://github.com/QData/TextAttack) it first
+Installation for Project，if you need to study the robustness of the model to text shift, you need to install [Textattack](https://github.com/QData/TextAttack)
 
 ```
 git clone https://anonymous.4open.science/r/Do-GOOD-D88A && cd Do-GOOD
