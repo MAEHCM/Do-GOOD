@@ -85,7 +85,7 @@ python merge_layout.py
 ![](https://user-images.githubusercontent.com/111342294/202724209-b915d944-dd62-4e77-a66e-781bc4b4a707.png)
 
 
-### Generate CDIP-I_{1}
+### Generate CDIP-I<sub>1</sub>
 
 Separate text pixels and non text pixels in the document, and then overlay them into the natural scene [MSCOCO](https://cocodataset.org/#home)
 
@@ -95,7 +95,7 @@ python python mixup_image.py
 
 ![](https://user-images.githubusercontent.com/111342294/202724449-f8ee8ffd-c8aa-4dd7-b665-1a6558b5e7aa.png)
 
-### Generate CDIP-I_{2}
+### Generate CDIP-I<sub>2</sub>
 
 Using pre-trained [DocGeoNet](https://github.com/fh2019ustc/DocGeoNet)(specific process reference), a forward propagation calculation of the normal document image is performed to get the distorted image, and then OCR again
 
