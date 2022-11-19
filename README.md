@@ -106,7 +106,9 @@ python inference.py
 ![](https://user-images.githubusercontent.com/111342294/202726278-e0a89790-494e-46a6-8a2e-42009f2dfce4.png)
 
 
-# Run-test
+# Tuning and Testing
+
+## Tuning
 
 Select the model used and the task fill, the first { } select `v3`, `v2`, `v1`, `bros` or `lilt`, the second {} select`funsd` or `cdip`
 
@@ -122,15 +124,7 @@ For VQA tasks, use the command line alone，fill in the selected model at { }
 python docvqa_{}_main.py
 ```
 
-* Add OOD Samples Into Original Training Set and Test
-
-| Sample Num | 0      | 10      | 20      |
-|:--------:| :------------:| :------------:| :------------:|
-| +FUNSD_R | 56.56 | 61.53 | 65.10 |
-| +FUNSD_H | 68.32 | 70.78 | 70.65 |
-
-
-* Testing OOD datasets for downstream tasks
+## Testing
 
 Select the model used and the task fill, the first { } select `v3`, `v2`, `v1`, `bros` or `lilt`, the second { } select`funsd` or `cdip` ， modify the following parameters to perform a shift operation on a mode.`--text_aug`,`--image_aug`,`--aut_layout`
 ```
