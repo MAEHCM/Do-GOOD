@@ -136,3 +136,7 @@ python demo_{ }_ood_{ }.py
 ```
 
 # Results
+
+###  Compare the ID and OOD performance of the existing models on the FUNSD, RVL-CDIP and DocVQA datasets:
+![image](https://user-images.githubusercontent.com/111342294/202836388-7e251a9c-ad73-4d16-bfc3-a0d6ba11f9dc.png)
+
