@@ -138,6 +138,16 @@ python demo_{ }_ood_{ }.py
 
 # Results
 
-###  The ID and OOD performance of the existing models
+### The ID and OOD performance of the existing models
 ![image](https://user-images.githubusercontent.com/111342294/202836388-7e251a9c-ad73-4d16-bfc3-a0d6ba11f9dc.png)
+
+### Results on the FUNSD-L dataset
+![image](https://user-images.githubusercontent.com/111342294/202836562-40e1b795-a194-43cf-8ff4-d480c07dbb18.png)
+
+### Incremental training results on the FUNSD and CDIP datasets
+![image](https://user-images.githubusercontent.com/111342294/202836631-a1e32e97-2f6f-4b72-ae62-ec0c0cbaab63.png)
+![image](https://user-images.githubusercontent.com/111342294/202836640-caf634fe-8448-423f-af0e-a4e92718bcd0.png)
+
+
+
 
