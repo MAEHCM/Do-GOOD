@@ -144,12 +144,12 @@ python demo_{ }_ood_{ }.py
 ### Incremental training results on the FUNSD and CDIP datasets
 ![](https://user-images.githubusercontent.com/111342294/216049813-ef25379f-317f-4bf8-809e-bbc8979085ea.png)
 
-# Algorithm details
+### Algorithm details
 ![](https://user-images.githubusercontent.com/111342294/216042901-f8e00e98-1e4a-4f62-a042-fb2831ebe650.png)
 ![](https://user-images.githubusercontent.com/111342294/216049472-3f539605-ca00-492a-b255-45c1638b269e.png)
 
 
-# Visualize the results
+### Visualize the results
 ![](https://user-images.githubusercontent.com/111342294/216043281-e05d76ac-25bc-4d2e-9973-c64e3b5bf1ff.png)
 ![](https://user-images.githubusercontent.com/111342294/216045562-c7131d37-390c-4a70-aa6b-de85b0b4f280.png)
 ![](https://user-images.githubusercontent.com/111342294/216045726-838a230d-56b7-4884-994d-ba86f93fdb9a.png)
