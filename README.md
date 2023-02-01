@@ -1,4 +1,4 @@
-# 📚Do-GOOD: A Fine-Grained Analysis of Distribution Shifts on Document Images
+# 📚Do-GOOD: Towards Distribution Shift Evaluation for Pre-Trained Visual Document Understanding Models
 
 # Table of contents
 * [Overview](#overview)
@@ -155,8 +155,3 @@ python demo_{ }_ood_{ }.py
 ![](https://user-images.githubusercontent.com/111342294/216045934-bb40f455-219b-400f-b7a6-d4132969345b.png)
 
 ![](https://user-images.githubusercontent.com/111342294/216046090-13e73163-7628-4833-8319-4991a065c97a.png)
-
-
-
-
-
