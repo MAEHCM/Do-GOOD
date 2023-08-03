@@ -1,5 +1,7 @@
 # 📚Do-GOOD: Towards Distribution Shift Evaluation for Pre-Trained Visual Document Understanding Models
 
+Code for SIGIR 2023 Paper "Do-GOOD: Towards Distribution Shift Evaluation for Pre-Trained Visual Document Understanding Models"
+
 # Table of contents
 * [Overview](#overview)
 * [Requirement](#requirement)
